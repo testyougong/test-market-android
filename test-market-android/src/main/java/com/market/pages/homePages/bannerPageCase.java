@@ -9,8 +9,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class bannerPageCase extends bannerPage {
     public void clickBanner() throws Exception {
-       if(baseWidget.isElementExist(objectMap.getLocator("market.android.banner"))){
-           driver.findElement(objectMap.getLocator("")).click();
+       if(baseWidget.isElementExist(objectMap.getLocator("market.android.banner.one"))){
+           driver.findElement(objectMap.getLocator("market.android.banner.one")).click();
            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
            if(baseWidget.isElementExist(objectMap.getLocator("market.android.getActivityName"))){
                System.out.println("首页banner点击正常");
