@@ -31,7 +31,7 @@ public class loginPageCase extends loginPage{
         WebElement password = driver.findElement(objectMap.getLocator("market.android.password"));
         String cellphoneText = cellphone.getAttribute("text");
         if(cellphone.getText()!="请输入手机号"){
-            bw.clearText(cellphoneText);
+            driver.findElement(objectMap.getLocator("market.android.clearButton")).click();
         }
         cellphone.sendKeys(Constant.phone);
         password.sendKeys(Constant.password);

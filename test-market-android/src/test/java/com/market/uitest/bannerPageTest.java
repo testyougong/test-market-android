@@ -21,8 +21,11 @@ public class bannerPageTest extends Base{
     }
 
     @Test
-    public void testHome(){
-        bannerPageCase hp = new bannerPageCase();
-        hp.getWord();
+    public void testBanner() throws Exception {
+        //初始化
+        bannerPageCase bannerpagecase = new bannerPageCase();
+        //测试banner点击
+        bannerpagecase.clickBanner();
+
     }
 }

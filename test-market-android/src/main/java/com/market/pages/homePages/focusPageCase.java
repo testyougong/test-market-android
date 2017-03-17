@@ -7,12 +7,12 @@ import java.util.concurrent.TimeUnit;
  * Created by zhouxin on 17/3/9.
  */
 public class focusPageCase extends focusPage{
-    @Override
-    public void swipeFocus() throws Exception {
-        if(baseWidget.isElementExist(objectMap.getLocator("market.android.focus"))) {
-            for (int i = 0; i < 5; i++) {
-                baseWidget.swipeToLeft(500);
-            }
+                @Override
+                public void swipeFocus() throws Exception {
+                    if(baseWidget.isElementExist(objectMap.getLocator("market.android.focus"))) {
+                        for (int i = 0; i < 5; i++) {
+                            baseWidget.swipeToLeft(500);
+                        }
             System.out.println("首页轮播图滑动正常");
         }else{
             System.out.println("首页轮播图元素获取失败,无法滑动");

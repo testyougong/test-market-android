@@ -2,6 +2,8 @@ package com.market.base;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import org.apache.log4j.Logger;
+
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -9,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class Base {
     public static AndroidDriver driver;
     public static properties objectMap = new properties(Constant.propertiesFilePath);// 配置文件路径
+    //public static org.apache.log4j.Logger logger = Logger.getLogger(Base.class);
     public static void prepareAndroidForAppium() throws Exception{
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName", "SM_G9250");

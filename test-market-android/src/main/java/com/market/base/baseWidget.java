@@ -1,6 +1,7 @@
 package com.market.base;
 
 import io.appium.java_client.TouchAction;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,7 @@ public class baseWidget extends Base{
             return true;
         }catch(Exception e){
             //e.printStackTrace();
+            //logger.error("元素不存在",e);
             return false;
         }
     }
@@ -57,15 +59,15 @@ public class baseWidget extends Base{
         return element;
     }
 
-
-    //清楚文本内容
+    /*旧版,现在不用了
+    //清除文本内容
     public void clearText(String text) {
         driver.sendKeyEvent(123);
         for (int i = 0; i < text.length(); i++) {
             driver.sendKeyEvent(67);
         }
     }
-
+    */
 
     //获取当前时间
     public static String time(){

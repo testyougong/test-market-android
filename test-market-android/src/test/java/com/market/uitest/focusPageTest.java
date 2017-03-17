@@ -22,7 +22,7 @@ public class focusPageTest extends Base{
     }
 
     @Test
-    public static void testLogin() throws Exception {
+    public static void testFocus() throws Exception {
         //初始化
         focusPageCase focusPageCase = new focusPageCase();
         //测试轮播图滑动
