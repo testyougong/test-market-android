@@ -1,12 +1,13 @@
 package com.market.pages.homePages;
 
+import com.market.base.Base;
 import com.market.base.baseWidget;
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by zhouxin on 17/3/9.
  */
-public class focusPageCase extends focusPage{
+public class focusPageCase extends Base implements focusPage{
                 @Override
                 public void swipeFocus() throws Exception {
                     if(baseWidget.isElementExist(objectMap.getLocator("market.android.focus"))) {

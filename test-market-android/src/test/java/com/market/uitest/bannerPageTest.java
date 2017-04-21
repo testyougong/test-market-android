@@ -1,7 +1,7 @@
 package com.market.uitest;
 
 import com.market.pages.homePages.bannerPageCase;
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import com.market.base.Base;

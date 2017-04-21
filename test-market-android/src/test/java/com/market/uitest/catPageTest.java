@@ -1,9 +1,8 @@
 package com.market.uitest;
 
 import com.market.base.Base;
-import com.market.pages.homePages.bannerPageCase;
 import com.market.pages.homePages.catPageCase;
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -25,7 +24,7 @@ public class catPageTest extends Base{
     public void testCat() throws Exception {
         //初始化
         catPageCase catpagecase = new catPageCase();
-        //测试banner点击
+        //测试cat点击
         catpagecase.clickCat();
 
     }

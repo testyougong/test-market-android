@@ -26,7 +26,7 @@ public class baseWidget extends Base{
             return true;
         }catch(Exception e){
             //e.printStackTrace();
-            //logger.error("元素不存在",e);
+            logger.error("元素不存在");
             return false;
         }
     }
