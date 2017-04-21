@@ -1,5 +1,6 @@
 package com.market.pages.homePages;
 
+import com.market.base.Base;
 import com.market.base.baseWidget;
 import io.appium.java_client.android.AndroidKeyCode;
 import org.openqa.selenium.WebElement;
@@ -10,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by zhouxin on 17/3/15.
  */
-public class catPageCase extends catPage{
+public class catPageCase extends Base implements catPage{
     public void clickCat() throws Exception {
         for(int i = 1;i < 3;i++){
             for(int j = 1;j < 5;j++){

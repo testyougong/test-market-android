@@ -5,7 +5,7 @@ import com.market.base.Base;
 /**
  * Created by zhouxin on 17/3/8.
  */
-public abstract class focusPage extends Base{
-    public abstract void swipeFocus() throws Exception;
-    public abstract void clickFocus() throws Exception;
+public interface focusPage {
+    void swipeFocus() throws Exception;
+    void clickFocus() throws Exception;
 }

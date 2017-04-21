@@ -1,5 +1,6 @@
 package com.market.pages.loginPages;
 
+import com.market.base.Base;
 import com.market.base.Constant;
 import com.market.base.baseWidget;
 import org.openqa.selenium.*;
@@ -9,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by zhouxin on 17/3/8.
  */
-public class loginPageCase extends loginPage{
+public class loginPageCase extends Base implements loginPage {
     private final String name = "登录";
     public String getLoginTagName() throws Exception {
         baseWidget basewidget = new baseWidget();
@@ -41,6 +42,10 @@ public class loginPageCase extends loginPage{
             System.out.println("登录成功");
         }else
             System.out.println("登录失败");
+    }
+
+    public void aaa(){
+
     }
 
 }

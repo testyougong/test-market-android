@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="18.054">
+           time="53.001">
   <properties />
   
   
-            <testcase name="testLogin" time="18.054" classname="com.market.uitest.loginPageTest" />
+            <testcase name="testCat" time="53.001" classname="com.market.uitest.catPageTest" />
       
 </testsuite>
