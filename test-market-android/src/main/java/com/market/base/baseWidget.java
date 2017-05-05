@@ -14,6 +14,7 @@ import java.io.File;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by zhouxin on 17/3/8.
@@ -26,7 +27,6 @@ public class baseWidget extends Base{
             return true;
         }catch(Exception e){
             //e.printStackTrace();
-            logger.error("元素不存在");
             return false;
         }
     }
@@ -50,6 +50,12 @@ public class baseWidget extends Base{
             //e.printStackTrace();
             return false;
         }
+    }
+
+    //native和webview相互切换,0为native,1为webview
+    public static void webview(int a){
+        Set<String> contextNames = driver.getContextHandles();
+        driver.context((String) contextNames.toArray()[a]);
     }
 
     //抓toast

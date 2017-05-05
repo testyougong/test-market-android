@@ -10,23 +10,23 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by zhouxin on 17/3/8.
  */
-public class loginPageCase extends Base implements loginPage {
+public class LoginPageCase extends Base implements LoginPage {
     private final String name = "登录";
-    public String getLoginTagName() throws Exception {
+    public void getTagName() throws Exception {
         baseWidget basewidget = new baseWidget();
         if(basewidget.isElementExist(objectMap.getLocator("market.android.loginTagName"))){
             String tagName = driver.findElement(objectMap.getLocator("market.android.loginTagName")).getText();
             if(tagName.equals(name)){
-                return "访问登录页面成功";
+                System.out.println("访问登录页面成功");
             }else {
-                return "进入了错误的页面";
+                System.out.println("进入了错误的页面");
             }
         }else {
-            return "登录页tagName获取元素失败";
+            System.out.println("登录页tagName获取元素失败");
         }
     }
 
-    public void testLogin() throws Exception{
+    public void login() throws Exception{
         baseWidget bw = new baseWidget();
         WebElement cellphone = driver.findElement(objectMap.getLocator("market.android.phone"));
         WebElement password = driver.findElement(objectMap.getLocator("market.android.password"));
@@ -42,10 +42,6 @@ public class loginPageCase extends Base implements loginPage {
             System.out.println("登录成功");
         }else
             System.out.println("登录失败");
-    }
-
-    public void aaa(){
-
     }
 
 }

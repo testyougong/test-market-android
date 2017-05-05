@@ -7,21 +7,21 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by zhouxin on 17/3/9.
  */
-public class focusPageCase extends Base implements focusPage{
-                @Override
-                public void swipeFocus() throws Exception {
-                    if(baseWidget.isElementExist(objectMap.getLocator("market.android.focus"))) {
-                        for (int i = 0; i < 5; i++) {
-                            baseWidget.swipeToLeft(500);
-                        }
-            System.out.println("首页轮播图滑动正常");
+public class FocusPageCase extends Base implements HomePage{
+    @Override
+    public void swipe() throws Exception {
+        if(baseWidget.isElementExist(objectMap.getLocator("market.android.focus"))) {
+            for (int i = 0; i < 5; i++) {
+                baseWidget.swipeToLeft(500);
+            }
+        System.out.println("首页轮播图滑动正常");
         }else{
             System.out.println("首页轮播图元素获取失败,无法滑动");
         }
     }
 
     @Override
-    public void clickFocus() throws Exception {
+    public void click() throws Exception {
         if(baseWidget.isElementExist(objectMap.getLocator("market.android.focus"))) {
             driver.findElement(objectMap.getLocator("market.android.focus")).click();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

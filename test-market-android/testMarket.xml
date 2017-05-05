@@ -3,10 +3,13 @@
 <suite name="TestSuite">
     <test name="testMarket">
         <classes>
-            <class name="com.market.uitest.loginPageTest"/>
-            <class name="com.market.uitest.focusPageTest"/>
-            <class name="com.market.uitest.catPageTest"/>
-            <class name="com.market.uitest.bannerPageTest"/>
+            <class name="com.market.uitest.loginTest.LoginTest"/>
+            <class name="com.market.uitest.homeTest.FocusTest"/>
+            <class name="com.market.uitest.homeTest.CatTest"/>
+            <class name="com.market.uitest.homeTest.BannerTest"/>
+            <class name="com.market.uitest.myTest.MyTest"/>
+            <class name="com.market.uitest.myTest.UserTest"/>
+            <class name="com.market.uitest.myTest.OrderTest"/>
         </classes>
     </test> <!-- Test -->
     <listeners>

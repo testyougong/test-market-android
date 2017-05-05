@@ -1,7 +1,9 @@
-package com.market.uitest;
+package com.market.uitest.homeTest;
 
 import com.market.base.Base;
-import com.market.pages.homePages.catPageCase;
+import com.market.pages.homePages.CatPageCase;
+import com.market.pages.homePages.CatPageTest;
+import com.market.pages.homePages.HomePage;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,7 +11,7 @@ import org.testng.annotations.BeforeClass;
 /**
  * Created by zhouxin on 17/3/15.
  */
-public class catPageTest extends Base{
+public class CatTest extends Base{
     @BeforeClass
     public void setUp() throws Exception{
         prepareAndroidForAppium();
@@ -23,9 +25,10 @@ public class catPageTest extends Base{
     @Test
     public void testCat() throws Exception {
         //初始化
-        catPageCase catpagecase = new catPageCase();
+        CatPageTest catPageTest = new CatPageTest();
+        HomePage cat = new CatPageCase();
         //测试cat点击
-        catpagecase.clickCat();
+        catPageTest.click(cat);
 
     }
 }

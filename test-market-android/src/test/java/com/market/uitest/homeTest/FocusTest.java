@@ -1,8 +1,9 @@
-package com.market.uitest;
+package com.market.uitest.homeTest;
 
 import com.market.base.Base;
-import com.market.pages.homePages.focusPageCase;
-import com.market.pages.loginPages.loginPageCase;
+import com.market.pages.homePages.FocusPageCase;
+import com.market.pages.homePages.FocusPageTest;
+import com.market.pages.homePages.HomePage;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import org.testng.annotations.Test;
 /**
  * Created by zhouxin on 17/3/9.
  */
-public class focusPageTest extends Base{
+public class FocusTest extends Base{
     @BeforeClass
     public void setUp() throws Exception{
         prepareAndroidForAppium();
@@ -24,10 +25,11 @@ public class focusPageTest extends Base{
     @Test
     public static void testFocus() throws Exception {
         //初始化
-        focusPageCase focusPageCase = new focusPageCase();
+        FocusPageTest focusPageTest = new FocusPageTest();
+        HomePage focus = new FocusPageCase();
         //测试轮播图滑动
-        focusPageCase.swipeFocus();
+        focusPageTest.swipe(focus);
         //测试轮播图点击
-        focusPageCase.clickFocus();
+        focusPageTest.click(focus);
     }
 }

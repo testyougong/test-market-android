@@ -1,6 +1,8 @@
-package com.market.uitest;
+package com.market.uitest.homeTest;
 
-import com.market.pages.homePages.bannerPageCase;
+import com.market.pages.homePages.BannerPageTest;
+import com.market.pages.homePages.HomePage;
+import com.market.pages.homePages.BannerPageCase;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,7 +11,7 @@ import com.market.base.Base;
 /**
  * Created by zhouxin on 17/3/6.
  */
-public class bannerPageTest extends Base{
+public class BannerTest extends Base{
     @BeforeClass
     public void setUp() throws Exception{
         prepareAndroidForAppium();
@@ -23,9 +25,10 @@ public class bannerPageTest extends Base{
     @Test
     public void testBanner() throws Exception {
         //初始化
-        bannerPageCase bannerpagecase = new bannerPageCase();
+        BannerPageTest bannerPageTest = new BannerPageTest();
+        HomePage banner = new BannerPageCase();
         //测试banner点击
-        bannerpagecase.clickBanner();
+        bannerPageTest.click(banner);
 
     }
 }
