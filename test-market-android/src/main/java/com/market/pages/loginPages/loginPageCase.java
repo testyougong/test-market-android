@@ -30,8 +30,8 @@ public class LoginPageCase extends Base implements LoginPage {
         baseWidget bw = new baseWidget();
         WebElement cellphone = driver.findElement(objectMap.getLocator("market.android.phone"));
         WebElement password = driver.findElement(objectMap.getLocator("market.android.password"));
-        String cellphoneText = cellphone.getAttribute("text");
-        if(cellphone.getText()!="请输入手机号"){
+        //String cellphoneText = cellphone.getAttribute("text");
+        if(!(cellphone.getText().equals("请输入手机号"))){
             driver.findElement(objectMap.getLocator("market.android.clearButton")).click();
         }
         cellphone.sendKeys(Constant.phone);

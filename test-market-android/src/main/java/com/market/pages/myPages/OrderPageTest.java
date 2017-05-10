@@ -12,11 +12,7 @@ public class OrderPageTest {
         order.getTabName();
     }
 
-    public void getDefaultOrderStatusTab(OrderPage order) throws Exception {
-        order.getDefaultOrderStatusTab();
-    }
-
-    public void orderStatusTabClick(OrderPage order) throws Exception {
-        order.orderStatusTabClick();
+    public void orderStatusCheck(OrderPage order) throws Exception  {
+        order.orderStatusCheck();
     }
 }

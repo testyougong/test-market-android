@@ -6,6 +6,5 @@ package com.market.pages.myPages;
 public interface OrderPage {
     void getTagName() throws Exception;
     void getTabName() throws Exception;
-    void getDefaultOrderStatusTab() throws Exception;
-    void orderStatusTabClick() throws Exception;
+    void orderStatusCheck() throws Exception;
 }

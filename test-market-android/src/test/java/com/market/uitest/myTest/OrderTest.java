@@ -23,7 +23,7 @@ public class OrderTest extends Base{
     }
 
     @Test
-    public static void testUser() throws Exception {
+    public static void testOrder() throws Exception {
         //初始化
         OrderPageTest orderPageTest = new OrderPageTest();
         OrderPage order = new OrderPageCase();
@@ -31,9 +31,7 @@ public class OrderTest extends Base{
         orderPageTest.getTabName(order);
         //测试我的订单页面tagName
         orderPageTest.getTagName(order);
-        //测试我的订单页面默认选中状态
-        orderPageTest.getDefaultOrderStatusTab(order);
-        //测试我的订单页面各订单状态点击筛选
-        orderPageTest.orderStatusTabClick(order);
+        //测试订单状态准确性
+        orderPageTest.orderStatusCheck(order);
     }
 }
