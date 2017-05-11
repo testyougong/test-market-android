@@ -32,6 +32,8 @@ public class OrderTest extends Base{
         //测试我的订单页面tagName
         orderPageTest.getTagName(order);
         //测试订单状态准确性
-        orderPageTest.orderStatusCheck(order);
+        //orderPageTest.orderStatusCheck(order);
+        //测试订单列表页滑动
+        orderPageTest.swipeOrderList(order);
     }
 }

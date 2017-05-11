@@ -4,6 +4,9 @@ import com.market.base.Base;
 import com.market.base.baseWidget;
 import io.appium.java_client.android.AndroidElement;
 
+import java.util.List;
+import java.util.Random;
+
 /**
  * Created by zhouxin on 17/5/5.
  */
@@ -30,7 +33,10 @@ public class OrderPageCase extends Base implements OrderPage {
         for(int i = 0;i < 4;i++){
             baseWidget.swipeToRight(500);
             if(basewidget.isElementExist(objectMap.getLocator("market.android.orderItem"))) {
-                AndroidElement orderItem = (AndroidElement) driver.findElements(objectMap.getLocator("market.android.orderItem")).get(0);
+                List<AndroidElement> itemList = driver.findElements(objectMap.getLocator("market.android.orderItem"));
+                Random random = new Random();
+                int itemCounts = random.nextInt(itemList.size());
+                AndroidElement orderItem = (AndroidElement) driver.findElements(objectMap.getLocator("market.android.orderItem")).get(itemCounts);
                 orderItem.click();
                 AndroidElement orderStatus = (AndroidElement) driver.findElement(objectMap.getLocator("market.android.detailOrderStatus"));
                 String expectStatus = null;
@@ -100,5 +106,16 @@ public class OrderPageCase extends Base implements OrderPage {
         }
     }
 
+    public void swipeOrderList() throws InterruptedException {
+        for(int i=0;i<2;i++){
+            baseWidget.swipeToDown(500);
+            Thread.sleep(1000);
+        }
+        for(int j=0;j<2;j++){
+            baseWidget.swipeToUp(500);
+            Thread.sleep(1000);
+        }
+
+    }
 
 }

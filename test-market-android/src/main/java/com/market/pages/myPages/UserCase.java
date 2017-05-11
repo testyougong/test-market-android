@@ -7,9 +7,9 @@ import io.appium.java_client.android.AndroidElement;
 /**
  * Created by zhouxin on 17/4/25.
  */
-public class UserPageCase extends Base implements MyPage{
+public class UserCase extends Base implements MyPage{
     private String name;
-    public UserPageCase(String name){
+    public UserCase(String name){
         this.name = name;
     }
 

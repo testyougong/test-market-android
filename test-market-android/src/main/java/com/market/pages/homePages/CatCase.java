@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by zhouxin on 17/3/15.
  */
-public class CatPageCase extends Base implements HomePage{
+public class CatCase extends Base implements HomePage{
     private final String name = "分类";
     @Override
     public void click() throws Exception {
@@ -35,6 +35,8 @@ public class CatPageCase extends Base implements HomePage{
                         }
                         driver.pressKeyCode(AndroidKeyCode.BACK);
                     }
+                }else{
+                    System.out.println("cat元素获取失败");
                 }
             }
         }

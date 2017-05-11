@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by zhouxin on 17/3/9.
  */
-public class FocusPageCase extends Base implements HomePage{
+public class FocusCase extends Base implements HomePage{
     @Override
     public void swipe() throws Exception {
         if(baseWidget.isElementExist(objectMap.getLocator("market.android.focus"))) {
@@ -27,8 +27,10 @@ public class FocusPageCase extends Base implements HomePage{
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             if(baseWidget.isElementExist(objectMap.getLocator("market.android.getActivityName"))){
                 System.out.println("首页轮播图点击正常");
+                driver.findElement(objectMap.getLocator("market.android.back")).click();
             }else{
                 System.out.println("活动页面title元素获取失败");
+                driver.findElement(objectMap.getLocator("market.android.back")).click();
             }
         }else{
             System.out.println("轮播图元素获取失败,无法点击");

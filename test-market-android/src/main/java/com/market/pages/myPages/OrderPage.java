@@ -7,4 +7,5 @@ public interface OrderPage {
     void getTagName() throws Exception;
     void getTabName() throws Exception;
     void orderStatusCheck() throws Exception;
+    void swipeOrderList() throws Exception;
 }

@@ -8,7 +8,7 @@ import io.appium.java_client.android.AndroidElement;
 /**
  * Created by zhouxin on 17/4/25.
  */
-public class MyPageCase extends Base implements MyPage {
+public class MyCase extends Base implements MyPage {
     private final String name = "我的";
     @Override
     public void getTagName() throws Exception {

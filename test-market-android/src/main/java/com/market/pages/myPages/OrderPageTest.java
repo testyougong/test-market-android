@@ -15,4 +15,8 @@ public class OrderPageTest {
     public void orderStatusCheck(OrderPage order) throws Exception  {
         order.orderStatusCheck();
     }
+
+    public void swipeOrderList(OrderPage order) throws Exception{
+        order.swipeOrderList();
+    }
 }

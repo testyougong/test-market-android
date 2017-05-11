@@ -1,7 +1,7 @@
 package com.market.uitest.loginTest;
 
 import com.market.pages.loginPages.LoginPage;
-import com.market.pages.loginPages.LoginPageCase;
+import com.market.pages.loginPages.LoginCase;
 import com.market.pages.loginPages.LoginPageTest;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -26,7 +26,7 @@ public class LoginTest extends Base{
     @Test
     public static void testLogin() throws Exception {
         //初始化
-        LoginPage login = new LoginPageCase();
+        LoginPage login = new LoginCase();
         LoginPageTest loginPageTest = new LoginPageTest();
         //测试登录页面tagName
         loginPageTest.getTagName(login);

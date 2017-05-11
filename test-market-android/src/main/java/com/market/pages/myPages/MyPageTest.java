@@ -7,4 +7,8 @@ public class MyPageTest {
     public void getTagName(MyPage my) throws Exception {
         my.getTagName();
     }
+
+    public void getTabName(MyPage my) throws Exception {
+        my.getTabName();
+    }
 }
