@@ -12,7 +12,7 @@ public class MyCase extends Base implements MyPage {
     private final String name = "我的";
     @Override
     public void getTagName() throws Exception {
-        AndroidElement my = (AndroidElement) driver.findElements(objectMap.getLocator("market.android.my")).get(3);
+        AndroidElement my = (AndroidElement) driver.findElements(objectMap.getLocator("market.android.tab")).get(3);
         my.click();
         baseWidget basewidget = new baseWidget();
         if (basewidget.isElementExist(objectMap.getLocator("market.android.myTagName"))) {

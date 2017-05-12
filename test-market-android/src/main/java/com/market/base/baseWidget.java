@@ -1,17 +1,13 @@
 package com.market.base;
 
 import io.appium.java_client.TouchAction;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.OutputType;
-import org.apache.commons.io.*;
-import java.io.IOException;
-import java.io.File;
 
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Set;
@@ -147,5 +143,49 @@ public class baseWidget extends Base{
 		       	int startX11=driver.findElementByName(Name).getLocation().getX();
 		     	startX1=startX11;
 		     	}*/
+    }
+    /**
+     * 控制滑动方向
+     */
+    public enum Heading {
+        UP, DOWN,LEFT,RIGHT
+    }
+    //滑动指定元素
+    public static void swipeElement(By by, Heading heading) {
+        // 获取控件开始位置的坐标轴
+        Point start = driver.findElement(by).getLocation();
+        int startX = start.x;
+        int startY = start.y;
+
+        // 获取控件坐标轴差
+        Dimension q = driver.findElement(by).getSize();
+        int x = q.getWidth();
+        int y = q.getHeight();
+        // 计算出控件结束坐标
+        int endX = x + startX;
+        int endY = y + startY;
+
+        // 计算中间点坐标
+        int centreX = (endX + startX) / 2;
+        int centreY = (endY + startY) / 2;
+
+        switch (heading) {
+            // 向上滑动
+            case UP:
+                driver.swipe(centreX, centreY + 100, centreX, centreY - 100, 500);
+                break;
+            // 向下滑动
+            case DOWN:
+                driver.swipe(centreX, centreY - 100, centreX, centreY + 100, 500);
+                break;
+            //向左滑动
+            case LEFT:
+                driver.swipe(centreX - 100, centreY, centreX + 100, centreY, 500);
+                break;
+            //向右滑动
+            case RIGHT:
+                driver.swipe(centreX + 100, centreY, centreX - 100, centreY, 500);
+                break;
+        }
     }
 }

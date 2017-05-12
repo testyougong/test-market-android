@@ -7,5 +7,5 @@ public interface CategoryPage {
     void getTagName() throws Exception;
     void click() throws Exception;
     void swipe() throws Exception;
-    void addProduct() throws Exception;
+    void addItem() throws Exception;
 }

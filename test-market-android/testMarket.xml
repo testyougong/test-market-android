@@ -5,6 +5,7 @@
         <classes>
             <class name="com.market.uitest.loginTest.LoginTest"/>
             <class name="com.market.uitest.homeTest.HomeTest"/>
+            <class name="com.market.uitest.categoryTest.CategoryTest"/>
             <class name="com.market.uitest.myTest.MyTest"/>
             <class name="com.market.uitest.myTest.OrderTest"/>
         </classes>
