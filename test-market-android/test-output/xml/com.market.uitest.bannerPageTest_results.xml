@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="testBanner" time="32.349" classname="com.market.uitest.bannerPageTest" />
+            <testcase name="testBanner" time="32.349" classname="com.market.uitest.homeTest.BannerTest" />
       
 </testsuite>

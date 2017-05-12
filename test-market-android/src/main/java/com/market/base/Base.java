@@ -1,11 +1,11 @@
 package com.market.base;
 
+import io.appium.java_client.android.AndroidDriver;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-import org.apache.log4j.Logger;
-
-import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 
 public class Base {
@@ -15,8 +15,8 @@ public class Base {
     public static void prepareAndroidForAppium() throws Exception{
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName", "SM_G9250");
-        capabilities.setCapability("platformVersion", "5.1.1");
-        capabilities.setCapability("platformName", "04157df47a9d263a");
+        capabilities.setCapability("platformVersion", "5.1");
+        capabilities.setCapability("platformName", "QLXBBBA650570583");
         capabilities.setCapability("Package", "com.elianshang.yougong");
         capabilities.setCapability("Activity", "com.elianshang.yougong.ui.activity.WelcomeActivity");
         capabilities.setCapability("unicodeKeyboard", "True");
