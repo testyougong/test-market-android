@@ -61,7 +61,7 @@
       <file leaf-file-name="ItemListCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/categoryPages/ItemListCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="840">
               <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,21 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/loginPage.java">
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="39" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage1.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginPage1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/market/pages/myPages/MyPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/market/pages/myPages/MyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/market/uitest/MyPageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/market/uitest/loginPageTest/LoginPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/market/pages/myPages/MyPageCase.java" />
@@ -183,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/market/uitest/categoryTest/CategoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/market/pages/categoryPages/ItemListCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginPage1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginPage.java" />
       </list>
     </option>
   </component>
@@ -638,44 +628,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="loginPages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="loginPage.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test-market-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test-market-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="market" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="homePages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -748,6 +700,7 @@
       </pane>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scratches" />
 =======
       <pane id="PackagesPane" />
@@ -756,6 +709,10 @@
 =======
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+>>>>>>> dev
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
 >>>>>>> dev
     </panes>
   </component>
@@ -1636,7 +1593,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/categoryPages/ItemListCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="840">
           <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1644,18 +1601,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/loginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="39" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginPage1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/market/pages/loginPages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
